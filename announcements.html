@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Announcements | SMHS Girls Basketball</title>
+<meta name="description" content="Program news, updates, and announcements for SMHS Girls Basketball.">
+<link rel="icon" type="image/png" href="assets/skull-sabers.png">
+<link rel="apple-touch-icon" href="assets/skull-sabers.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="css/styles.css?v=news-hero">
+</head>
+<body>
+<div id="prog"></div>
+<a href="#main" class="sr-only focus:not-sr-only p-2 bg-white text-black">Skip to content</a>
+<nav aria-label="Main">
+ <div class="nav-bar px-4 md:px-6 xl:px-8">
+  <a href="index.html" class="nav-brand bebas leading-none"><span class="nav-brand-text"><span class="nav-brand-full">SMHS <span style="color:var(--red)">GIRLS BASKETBALL</span></span><span class="nav-brand-short">SMHS <span style="color:var(--red)">GBB</span></span></span><img id="nlogo" alt="" width="44" height="30" class="h-8 w-auto"></a>
+  <div id="links" class="nav-links hidden absolute left-0 right-0 bg-[#111] flex-col gap-4 p-5 osw text-sm">
+   <a href="index.html">Home</a><a href="team.html">Team</a><a href="schedule.html">Schedule</a><a href="store.html">Store</a><a href="announcements.html" class="active">Announcements</a><a href="photos.html">Photos</a><a href="fundraising.html">Fundraising</a><a href="sponsors.html">Sponsors</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-utils">
+   <button id="menu" class="nav-menu xl:hidden osw text-sm" aria-expanded="false" aria-controls="links">Menu</button>
+   <a href="store.html" class="nav-cart" aria-label="Team store cart">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 12h6"/></svg>
+    <span id="cartN2" class="cart-count">0</span>
+   </a>
+  </div>
+ </div>
+</nav>
+
+<main id="main">
+<header class="page-hero page-hero-news">
+ <div class="granite" aria-hidden="true"></div>
+ <div class="page-hero-inner">
+  <div class="page-hero-copy">
+   <div class="kick rev">Announcements</div>
+   <h1 class="text-5xl md:text-7xl rev">THE LATEST</h1>
+   <p class="page-lead rev">Program news, fundraisers, and updates in one place.</p>
+  </div>
+ </div>
+ <form class="news-search rev" id="newsSearch" role="search">
+  <label class="news-search-label" for="newsQuery">Search announcements</label>
+  <div class="news-search-field">
+   <svg class="news-search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16.5 20.5 21"/></svg>
+   <input id="newsQuery" type="search" name="q" placeholder="Tryouts, pizza, donate…" autocomplete="off" enterkeyhint="search" aria-controls="newsGrid" aria-describedby="newsSearchStatus">
+   <button type="button" id="newsClear" class="news-search-clear" hidden aria-label="Clear search">&times;</button>
+  </div>
+ </form>
+</header>
+<section class="sec sec-news">
+ <p id="newsSearchStatus" class="news-search-status osw" aria-live="polite"></p>
+ <p id="newsEmpty" class="news-empty" hidden></p>
+ <div class="news-grid rev" id="newsGrid" aria-label="All announcements"></div>
+</section>
+</main>
+
+<footer class="bg-[#0a0a0a] border-t-4 border-[var(--red)] px-5 py-6">
+ <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 items-start">
+  <div class="flex gap-3 items-start">
+   <img id="flogo" alt="" class="w-12 shrink-0">
+   <div>
+    <p class="bebas text-2xl leading-none">SMHS GIRLS BASKETBALL</p>
+    <p class="bebas text-lg leading-none mt-1" style="color:var(--red)">DEFEND THE ROCK</p>
+    <p class="osw text-[10px] mt-1.5 text-[var(--mut)]">Excellence | Discipline | Toughness | Pride</p>
+   </div>
+  </div>
+  <div class="osw text-sm space-y-1"><a class="block" href="store.html">Store</a><a class="block" href="sponsors.html">Sponsor</a><a class="block" href="fundraising.html">Donate</a><button type="button" class="contact-trigger block" id="contactOpen" aria-haspopup="dialog" aria-controls="emailModal">Contact</button></div>
+  <div class="osw text-sm space-y-1"><a class="block" href="#">Instagram</a><a class="block" href="#">X / Twitter</a><a class="block" href="#">Facebook</a><a class="block" href="#">YouTube</a></div>
+ </div>
+ <p class="text-center text-xs text-[#999] mt-5">&copy; 2026 SMHS Girls Basketball</p>
+</footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+
+<div id="emailModal" class="emodal" hidden>
+ <div class="emodal-backdrop" data-close-modal aria-hidden="true"></div>
+ <div class="emodal-panel" role="dialog" aria-modal="true" aria-labelledby="emodalTitle" tabindex="-1">
+  <button type="button" class="emodal-close" data-close-modal aria-label="Close contact dialog">&times;</button>
+  <p class="emodal-kicker osw">Get in touch</p>
+  <h2 id="emodalTitle" class="bebas emodal-title">CONTACT</h2>
+  <p class="emodal-lead">Email the program &mdash; copy the address below.</p>
+  <div class="emodal-row">
+   <code id="contactEmail" class="emodal-email">info@smhsgirlsbasketball.net</code>
+   <button type="button" id="copyEmail" class="btn btn-r emodal-copy">Copy email</button>
+  </div>
+  <p id="copyStatus" class="emodal-status osw" aria-live="polite"></p>
+ </div>
+</div>
+
+<div id="newsModal" class="emodal" hidden>
+ <div class="emodal-backdrop" data-close-news aria-hidden="true"></div>
+ <div class="emodal-panel" role="dialog" aria-modal="true" aria-labelledby="newsModalTitle" tabindex="-1">
+  <button type="button" class="emodal-close" data-close-news aria-label="Close news dialog">&times;</button>
+  <p class="emodal-kicker osw" id="newsModalKicker"></p>
+  <h2 id="newsModalTitle" class="bebas emodal-title"></h2>
+  <p class="emodal-lead" id="newsModalBody"></p>
+  <a id="newsModalLink" class="btn btn-r news-modal-link" href="#" hidden></a>
+ </div>
+</div>
+
+<img id="logo" class="sr-only" src="assets/skull-sabers.png" width="1" height="1" alt="">
+<script src="js/main.js?v=news-search" defer></script>
+</body>
+</html>

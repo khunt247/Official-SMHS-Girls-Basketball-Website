@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="pl-lock">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SMHS Girls Basketball | Defend The Rock</title>
+<meta name="description" content="Official home of SMHS Girls Basketball, Stone Mountain High School Pirates. Schedule, roster, team store, fundraising and sponsors.">
+<script>(function(){try{if(sessionStorage.getItem('smhsPlSeen')){document.documentElement.classList.remove('pl-lock');document.documentElement.classList.add('pl-skip')}}catch(e){}})()</script>
+<link rel="icon" type="image/png" href="assets/skull-sabers.png">
+<link rel="apple-touch-icon" href="assets/skull-sabers.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="css/styles.css?v=pl-once">
+</head>
+<body>
+<div id="preloader" aria-live="polite" aria-busy="true" aria-label="Loading">
+ <div class="pl-glow" aria-hidden="true"></div>
+ <div class="pl-stage">
+  <div class="pl-ball" id="plBall" aria-hidden="true">
+   <img class="ball-img" src="assets/basketball-hd.png?v=ball" alt="" width="512" height="512" decoding="async" fetchpriority="high">
+  </div>
+  <img class="pl-mark" id="plMark" src="assets/skull-sabers.png" alt="SMHS Pirates skull and crossed sabers" width="512" height="512" decoding="async">
+ </div>
+ <p class="pl-tag osw">DEFEND THE ROCK</p>
+</div>
+<div id="prog"></div>
+<a href="#main" class="sr-only focus:not-sr-only p-2 bg-white text-black">Skip to content</a>
+<nav aria-label="Main">
+ <div class="nav-bar px-4 md:px-6 xl:px-8">
+  <a href="index.html" class="nav-brand bebas leading-none"><span class="nav-brand-text"><span class="nav-brand-full">SMHS <span style="color:var(--red)">GIRLS BASKETBALL</span></span><span class="nav-brand-short">SMHS <span style="color:var(--red)">GBB</span></span></span><img id="nlogo" alt="" width="44" height="30" class="h-8 w-auto"></a>
+  <div id="links" class="nav-links hidden absolute left-0 right-0 bg-[#111] flex-col gap-4 p-5 osw text-sm">
+   <a href="index.html" class="active">Home</a><a href="team.html">Team</a><a href="schedule.html">Schedule</a><a href="store.html">Store</a><a href="announcements.html">Announcements</a><a href="photos.html">Photos</a><a href="fundraising.html">Fundraising</a><a href="sponsors.html">Sponsors</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-utils">
+   <button id="menu" class="nav-menu xl:hidden osw text-sm" aria-expanded="false" aria-controls="links">Menu</button>
+   <a href="store.html" class="nav-cart" aria-label="Team store cart">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 12h6"/></svg>
+    <span id="cartN2" class="cart-count">0</span>
+   </a>
+  </div>
+ </div>
+</nav>
+
+<main id="main">
+<header id="home" class="hero2">
+ <div class="granite" aria-hidden="true"></div>
+ <div class="court-wrap" aria-hidden="true">
+  <div class="court">
+   <svg viewBox="0 0 1600 220" preserveAspectRatio="none">
+    <defs>
+     <linearGradient id="cfloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#222"/>
+      <stop offset=".4" stop-color="#151515"/>
+      <stop offset="1" stop-color="#080808"/>
+     </linearGradient>
+     <linearGradient id="cred" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8102E" stop-opacity=".7"/>
+      <stop offset=".35" stop-color="#C8102E" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#C8102E" stop-opacity="0"/>
+     </linearGradient>
+     <linearGradient id="cwall" x1="0" y1="0" x2="1" y2=".15">
+      <stop offset="0" stop-color="#030303"/>
+      <stop offset=".7" stop-color="#121212"/>
+      <stop offset="1" stop-color="#1d1d1d"/>
+     </linearGradient>
+     <linearGradient id="cwallR" x1="1" y1="0" x2="0" y2=".15">
+      <stop offset="0" stop-color="#030303"/>
+      <stop offset=".7" stop-color="#121212"/>
+      <stop offset="1" stop-color="#1d1d1d"/>
+     </linearGradient>
+     <linearGradient id="cbot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".9"/>
+     </linearGradient>
+
+     <!-- Realistic Institutional Basketball Goal Shaders (Matching Gym Vibe) -->
+     <linearGradient id="gPoleRealistic" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14171a"/>
+      <stop offset=".2" stop-color="#2a3039"/>
+      <stop offset=".48" stop-color="#606c7c"/>
+      <stop offset=".68" stop-color="#8e99a8"/>
+      <stop offset=".82" stop-color="#404a56"/>
+      <stop offset="1" stop-color="#171a1e"/>
+     </linearGradient>
+     <linearGradient id="gRimMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff753d"/>
+      <stop offset=".35" stop-color="#e23c10"/>
+      <stop offset="1" stop-color="#7a1400"/>
+     </linearGradient>
+     <linearGradient id="gBoardFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f7f9"/>
+      <stop offset=".5" stop-color="#e3e8ed"/>
+      <stop offset="1" stop-color="#cbd3dc"/>
+     </linearGradient>
+     <filter id="courtShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2"/>
+     </filter>
+
+     <!-- Realistic Proportional Basketball Goal (Compact Gooseneck & Regulation Fan Backboard) -->
+     <g id="hoop-3d">
+      <!-- 1. Soft Floor Ambient Contact Shadows (Anchors Hoop to Hardwood) -->
+      <g filter="url(#courtShadow)">
+       <!-- Base ground shadow safely OUT OF BOUNDS behind baseline -->
+       <ellipse cx="120" cy="125.5" rx="5.5" ry="1.9" fill="#000" fill-opacity=".65"/>
+       <!-- Rim & Net drop shadow IN BOUNDS on painted key floor -->
+       <ellipse cx="163.5" cy="125" rx="4" ry="1.5" fill="#000" fill-opacity=".5"/>
+       <!-- Connecting ground occlusion shadow across baseline -->
+       <polygon points="119,125.5 161.5,124.8 164.5,125.5 121,126.3" fill="#000" fill-opacity=".22"/>
+      </g>
+
+      <!-- 2. Sturdy Tubular Steel Gooseneck Post (Anchored Out of Bounds, Sweeping In Bounds) -->
+      <g class="hoop-pole">
+       <!-- Base Flange Mount Plate on Floor (Out of Bounds) -->
+       <ellipse cx="120" cy="125" rx="4.2" ry="1.4" fill="#181b1f" stroke="#2c323b" stroke-width=".6"/>
+       <ellipse cx="120" cy="124.8" rx="2.4" ry=".8" fill="#0f1114"/>
+       <!-- Base Reinforcement Sleeve -->
+       <rect x="118.4" y="122" width="3.2" height="2.5" rx=".4" fill="#1c2025" stroke="#0e1013" stroke-width=".4"/>
+
+       <!-- Heavy-Duty Gooseneck Pipe (Anchored at x=120 Out of Bounds, Arching Over Baseline x=140 into Court) -->
+       <path d="M 120 124.5 L 120 83 C 120 77, 126 76, 137 76.5 C 145 77, 151 77.8, 156.5 78.8" fill="none" stroke="url(#gPoleRealistic)" stroke-width="3.2" stroke-linecap="round"/>
+       <!-- Specular Light Reflection along Top Crest -->
+       <path d="M 119.3 124 L 119.3 83 C 119.3 77.5, 125.5 76.7, 136.5 77.2 C 144.5 77.7, 150.5 78.3, 156 79.3" fill="none" stroke="#c0cbd8" stroke-width=".55" stroke-opacity=".65" stroke-linecap="round"/>
+
+       <!-- Diagonal Stabilizer Truss Rod (Triangulated Support from Photo) -->
+       <!-- Pipe Clamp Collar (Centered Over Baseline) -->
+       <rect x="138" y="76.2" width="1.8" height="2.4" rx=".4" fill="#1e2227" stroke="#3d444f" stroke-width=".4"/>
+       <!-- Slender Metal Strut Rod -->
+       <line x1="139" y1="77.2" x2="156" y2="73.8" stroke="#525d6b" stroke-width=".9"/>
+       <line x1="139" y1="77.2" x2="156" y2="73.8" stroke="#a4b0bf" stroke-width=".35"/>
+       <!-- Rear Backboard Hub Plate -->
+       <polygon points="156,77.5 157.5,78 157.5,83.5 156,83" fill="#191c20" stroke="#0b0d0f" stroke-width=".4"/>
+      </g>
+
+      <!-- 3. Regulation Fan Backboard (Realistic 3D Perspective & Clean Trim) -->
+      <g class="hoop-backboard">
+       <!-- 3D Rear Plate Bevel (Tangible Thickness) -->
+       <path d="M 155.4 89 L 156.4 89 L 159.8 88.2 L 159.8 80.5 C 159.8 76.5, 158.5 71.5, 157.2 71.5 C 155.9 71.5, 155.4 75.5, 155.4 80.5 Z" fill="#1b1e22"/>
+       
+       <!-- Front Plate: Smooth Satin White Fan Silhouette -->
+       <path d="M 156.4 89 L 159.8 88.2 L 159.8 80.5 C 159.8 76.5, 158.5 71.5, 157.2 71.5 C 155.9 71.5, 156.4 75.5, 156.4 80.5 Z" fill="url(#gBoardFace)" stroke="#bcc6d2" stroke-width=".4"/>
+
+       <!-- Regulation Fan Perimeter Border (SMHS Crimson Red #C8102E) -->
+       <path d="M 156.8 88.4 L 159.4 87.7 L 159.4 80.8 C 159.4 77.2, 158.3 72.3, 157.2 72.3 C 156.2 72.3, 156.8 76.2, 156.8 80.8 Z" fill="none" stroke="#C8102E" stroke-width=".85" stroke-linejoin="round" stroke-opacity=".9"/>
+
+       <!-- Inner Shooter's Target Box (Directly Centered Above Rim) -->
+       <polygon points="157.5,81.5 159.2,81.1 159.2,85.6 157.5,86" fill="none" stroke="#C8102E" stroke-width=".75"/>
+      </g>
+
+      <!-- 4. Competition Rim, Box Gusset & Realistic 4D Braided Net -->
+      <g class="hoop-rim-assembly">
+       <!-- Heavy-Duty Rim Mounting Box Bracket -->
+       <polygon points="158.5,86.2 160.2,86.8 160.2,88.4 158.5,87.8" fill="#8f1400" stroke="#590d00" stroke-width=".4"/>
+       <polygon points="160.2,86.8 161.5,86.5 161.5,87.8 160.2,88.1" fill="#c42805"/>
+       <!-- Support Gusset Struts -->
+       <line x1="160.2" y1="87.8" x2="162.2" y2="87.2" stroke="#a32103" stroke-width=".6"/>
+
+       <!-- 4D Braided Nylon Net (Realistic Organic Taper & Airflow Physics) -->
+       <g class="hoop-net">
+        <!-- Soft Translucent Volume Fill -->
+        <polygon points="160.4,87.6 166.6,87.6 164.8,93.5 162.2,93.5" fill="#f4f6f8" fill-opacity=".12"/>
+        <!-- Vertical Braided Cords -->
+        <path d="M 160.8 87.5 L 162.4 93.5 M 162.2 87.8 L 163 93.6 M 163.5 87.9 L 163.5 93.7 M 164.8 87.8 L 164 93.6 M 166.2 87.5 L 164.6 93.5" stroke="#f0f3f6" stroke-width=".6" stroke-linecap="round"/>
+        <!-- Interwoven Cross Strands -->
+        <path d="M 161.2 87.6 L 164.4 93.5 M 165.8 87.6 L 162.6 93.5 M 162.5 87.8 L 163.8 93.6 M 164.5 87.8 L 163.2 93.6" stroke="#ffffff" stroke-width=".45" stroke-opacity=".7"/>
+        <!-- Tension Loops & Weighted Bottom Ring -->
+        <ellipse cx="163.5" cy="89.5" rx="2.3" ry=".7" fill="none" stroke="#ffffff" stroke-width=".4" stroke-opacity=".65"/>
+        <ellipse cx="163.5" cy="91.5" rx="1.8" ry=".55" fill="none" stroke="#ffffff" stroke-width=".4" stroke-opacity=".65"/>
+        <ellipse cx="163.5" cy="93.5" rx="1.3" ry=".4" fill="none" stroke="#ffffff" stroke-width=".65" stroke-opacity=".9"/>
+       </g>
+
+       <!-- Competition Breakaway Rim (18\" Regulation Tube in Arena Lighting) -->
+       <ellipse cx="163.5" cy="87.2" rx="3.3" ry="1.15" fill="none" stroke="url(#gRimMetal)" stroke-width="1.1"/>
+       <!-- Specular Highlight on Front Rim Arch -->
+       <path d="M 160.6 87.2 A 3.1 1.05 0 0 0 166.4 87.2" fill="none" stroke="#ffbba1" stroke-width=".55" stroke-linecap="round"/>
+      </g>
+     </g>
+
+     <g id="court-end">
+      <!-- Key / Paint fill -->
+      <polygon points="162,107 410,107 410,147 113,147" fill="#C8102E" fill-opacity=".22" stroke="none"/>
+      <!-- Key outline -->
+      <polygon points="162,107 410,107 410,147 113,147"/>
+      <!-- Free throw circle: solid outer facing midcourt, dashed inner in paint -->
+      <path d="M 410 107 A 75 20 0 0 1 410 147"/>
+      <path d="M 410 107 A 75 20 0 0 0 410 147" stroke-dasharray="5 4"/>
+      <!-- Lane markings: Neutral zone block at bottom (near basket), hash marks moving out toward free-throw line -->
+      <rect x="200" y="101" width="16" height="6" fill="#e6e6e6" fill-opacity=".45" stroke="none"/>
+      <line x1="250" y1="107" x2="250" y2="102"/>
+      <line x1="295" y1="107" x2="295" y2="102"/>
+      <line x1="340" y1="107" x2="340" y2="102"/>
+      <rect x="180" y="147" width="18" height="6" fill="#e6e6e6" fill-opacity=".45" stroke="none"/>
+      <line x1="235" y1="147" x2="235" y2="152"/>
+      <line x1="285" y1="147" x2="285" y2="152"/>
+      <line x1="335" y1="147" x2="335" y2="152"/>
+      <!-- 3-point line (corner straights & arc around the key) -->
+      <path d="M 228 54 L 330 54 C 465 54 520 85 520 125 C 520 165 445 196 265 196 L 52 196"/>
+      <!-- Restricted area arc (painted court floor line directly under rim) -->
+      <path d="M 163.5 117 A 14 8 0 0 1 163.5 133" stroke-opacity=".25"/>
+      <!-- Sideline hash lines (coaching box & substitution marks) -->
+      <line x1="620" y1="40" x2="620" y2="47"/>
+      <line x1="570" y1="210" x2="570" y2="201"/>
+      <line x1="760" y1="40" x2="760" y2="46"/>
+      <line x1="740" y1="210" x2="740" y2="202"/>
+     </g>
+    </defs>
+    <rect width="1600" height="220" fill="#050505"/>
+    <polygon points="0,0 210,28 210,220 0,220" fill="url(#cwall)"/>
+    <polygon points="1600,0 1390,28 1390,220 1600,220" fill="url(#cwallR)"/>
+    <polygon points="210,28 1390,28 1600,220 0,220" fill="url(#cfloor)"/>
+    <polygon points="210,28 1390,28 1455,72 145,72" fill="url(#cred)"/>
+    <g fill="none" stroke="#e6e6e6" stroke-opacity=".36" stroke-width="1.6" stroke-linejoin="round">
+     <!-- Court perimeter & half-court division line -->
+     <polygon points="245,40 1355,40 1565,210 35,210"/>
+     <line x1="800" y1="40" x2="800" y2="210"/>
+     <!-- Center court jump circles -->
+     <ellipse cx="800" cy="125" rx="72" ry="34"/>
+     <ellipse cx="800" cy="125" rx="24" ry="11"/>
+     <!-- Left & right regulation court ends -->
+     <use href="#court-end"/>
+     <use href="#court-end" transform="translate(1600 0) scale(-1 1)"/>
+    </g>
+    <polygon points="0,0 210,28 210,42 0,18" fill="#000" fill-opacity=".45"/>
+    <polygon points="1600,0 1390,28 1390,42 1600,18" fill="#000" fill-opacity=".45"/>
+    <rect x="0" y="165" width="1600" height="55" fill="url(#cbot)"/>
+    <!-- Upright 3D Basketball Goals on Left & Right Court Ends -->
+    <g id="court-goals" class="court-goals">
+     <use href="#hoop-3d"/>
+     <use href="#hoop-3d" transform="translate(1600 0) scale(-1 1)"/>
+    </g>
+   </svg>
+  </div>
+ </div>
+ <div class="hwrap max-w-6xl mx-auto">
+  <div class="order-2 lg:order-1">
+   <p class="osw eyebrow">Stone Mountain High School Pirates &bull; The Rock</p>
+   <h1 class="leading-[.86]"><span class="hero-rock hero-rock--stone">DEFEND</span><span class="hero-rock hero-rock--crimson">THE ROCK</span><span class="block osw text-base md:text-2xl mt-5 tracking-[.18em]">SMHS Girls Basketball</span></h1>
+   <p class="hvalues osw">Excellence <i>&bull;</i> Discipline <i>&bull;</i> Toughness <i>&bull;</i> Pride</p>
+   <div class="mt-7 flex flex-wrap gap-3"><a class="btn btn-r" href="store.html">Team Store — Coming Soon</a><a class="btn btn-o" href="schedule.html">View Schedule</a><a class="btn btn-o" href="fundraising.html">Support The Program</a></div>
+  </div>
+  <div class="order-1 lg:order-2 relative flex justify-center items-center"><svg class="ball-imprint" viewBox="0 0 200 200" aria-hidden="true"><defs><radialGradient id="bg" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#C8102E" stop-opacity=".55"/><stop offset=".75" stop-color="#7a0a1c" stop-opacity=".5"/><stop offset="1" stop-color="#3a0610" stop-opacity=".6"/></radialGradient><pattern id="pebble" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="1.25" cy="1.25" r=".7" fill="#000" fill-opacity=".28"/><circle cx="3.75" cy="3.75" r=".7" fill="#000" fill-opacity=".28"/></pattern><clipPath id="bc"><circle cx="100" cy="100" r="96"/></clipPath></defs><circle cx="100" cy="100" r="96" fill="url(#bg)"/><circle cx="100" cy="100" r="96" fill="url(#pebble)"/><g clip-path="url(#bc)" fill="none" stroke="#050505" stroke-width="3.2" stroke-opacity=".85"><path d="M100 0V200M0 100H200"/><path d="M34 6Q92 100 34 194"/><path d="M166 6Q108 100 166 194"/></g><circle cx="100" cy="100" r="96" fill="none" stroke="#C8102E" stroke-opacity=".6" stroke-width="2"/></svg><img id="logo" src="assets/skull-sabers.png" width="640" height="438" alt="SMHS Pirates skull and crossed sabers logo" fetchpriority="high"></div>
+ </div>
+ 
+ <div class="gbar"><div><span class="osw text-xs">Next Game</span><span class="bebas text-2xl" id="barMatchup">PIRATES vs. REDAN</span><span class="osw text-xs" id="barWhen">Tue Nov 10 &bull; 6:00 PM</span><span class="bebas text-2xl" id="hcd"></span><a href="schedule.html" class="btn btn-o !py-2 !text-xs">Full Schedule</a></div></div>
+</header>
+<div class="marq" aria-hidden="true"><div><span>BUILT DIFFERENT</span><span>|</span><span>S-T-O-N-E  M-O-U-N-T-A-I-N</span><span>|</span><span>THE ROCK</span><span>|</span><span>PIRATE NATION</span><span>|</span><span>BUILT DIFFERENT</span><span>|</span><span>S-T-O-N-E  M-O-U-N-T-A-I-N</span><span>|</span><span>THE ROCK</span><span>|</span><span>PIRATE NATION</span><span>|</span><span>BUILT DIFFERENT</span><span>|</span><span>S-T-O-N-E  M-O-U-N-T-A-I-N</span><span>|</span><span>THE ROCK</span><span>|</span><span>PIRATE NATION</span><span>|</span><span>BUILT DIFFERENT</span><span>|</span><span>S-T-O-N-E  M-O-U-N-T-A-I-N</span><span>|</span><span>THE ROCK</span><span>|</span><span>PIRATE NATION</span><span>|</span><span>BUILT DIFFERENT</span><span>|</span><span>S-T-O-N-E  M-O-U-N-T-A-I-N</span><span>|</span><span>THE ROCK</span><span>|</span><span>PIRATE NATION</span><span>|</span><span>BUILT DIFFERENT</span><span>|</span><span>S-T-O-N-E  M-O-U-N-T-A-I-N</span><span>|</span><span>THE ROCK</span><span>|</span><span>PIRATE NATION</span><span>|</span></div></div>
+<section class="sec">
+ <div class="kick rev">Announcements</div><h2 class="text-5xl md:text-7xl rev">THE LATEST</h2>
+ <div class="news-marq rev mt-6" id="newsMarq" aria-label="Latest news developments">
+  <div class="news-track" id="newsTrack"></div>
+ </div>
+ <a href="announcements.html" class="news-all rev">See all announcements →</a>
+</section>
+<section class="sec"><div class="kick rev">The Code</div><h2 class="text-5xl md:text-7xl rev mb-8">WHAT THE ROCK DEMANDS</h2>
+<div class="code grid md:grid-cols-2 gap-px bg-[#333] rev">
+<div><span class="bebas">01</span><h3 class="text-4xl mt-2">EXCELLENCE</h3><p class="text-[var(--mut)] mt-2">Elite effort, elite focus, every possession.</p></div>
+<div><span class="bebas">02</span><h3 class="text-4xl mt-2">DISCIPLINE</h3><p class="text-[var(--mut)] mt-2">Do the little things right. Every day, every rep, every time.</p></div>
+<div><span class="bebas">03</span><h3 class="text-4xl mt-2">TOUGHNESS</h3><p class="text-[var(--mut)] mt-2">Hold the line. Stay resilient.</p></div>
+<div><span class="bebas">04</span><h3 class="text-4xl mt-2">PRIDE</h3><p class="text-[var(--mut)] mt-2">Wear the name. Defend the Rock. Represent every time you step on the floor.</p></div></div>
+<figure class="mt-14 text-center max-w-2xl mx-auto rev"><blockquote id="q" class="bebas text-3xl md:text-5xl leading-tight"></blockquote><figcaption class="osw text-[10px] mt-3 text-[#aaa]">— Aristotle</figcaption></figure></section>
+</main>
+
+<footer class="bg-[#0a0a0a] border-t-4 border-[var(--red)] px-5 py-6">
+ <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 items-start">
+  <div class="flex gap-3 items-start">
+   <img id="flogo" alt="" class="w-12 shrink-0">
+   <div>
+    <p class="bebas text-2xl leading-none">SMHS GIRLS BASKETBALL</p>
+    <p class="bebas text-lg leading-none mt-1" style="color:var(--red)">DEFEND THE ROCK</p>
+    <p class="osw text-[10px] mt-1.5 text-[var(--mut)]">Excellence | Discipline | Toughness | Pride</p>
+   </div>
+  </div>
+  <div class="osw text-sm space-y-1"><a class="block" href="store.html">Store</a><a class="block" href="sponsors.html">Sponsor</a><a class="block" href="fundraising.html">Donate</a><button type="button" class="contact-trigger block" id="contactOpen" aria-haspopup="dialog" aria-controls="emailModal">Contact</button></div>
+  <div class="osw text-sm space-y-1"><a class="block" href="#">Instagram</a><a class="block" href="#">X / Twitter</a><a class="block" href="#">Facebook</a><a class="block" href="#">YouTube</a></div>
+ </div>
+ <p class="text-center text-xs text-[#999] mt-5">&copy; 2026 SMHS Girls Basketball</p>
+</footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+
+<div id="emailModal" class="emodal" hidden>
+ <div class="emodal-backdrop" data-close-modal aria-hidden="true"></div>
+ <div class="emodal-panel" role="dialog" aria-modal="true" aria-labelledby="emodalTitle" tabindex="-1">
+  <button type="button" class="emodal-close" data-close-modal aria-label="Close contact dialog">&times;</button>
+  <p class="emodal-kicker osw">Get in touch</p>
+  <h2 id="emodalTitle" class="bebas emodal-title">CONTACT</h2>
+  <p class="emodal-lead">Email the program &mdash; copy the address below.</p>
+  <div class="emodal-row">
+   <code id="contactEmail" class="emodal-email">info@smhsgirlsbasketball.net</code>
+   <button type="button" id="copyEmail" class="btn btn-r emodal-copy">Copy email</button>
+  </div>
+  <p id="copyStatus" class="emodal-status osw" aria-live="polite"></p>
+ </div>
+</div>
+
+<div id="newsModal" class="emodal" hidden>
+ <div class="emodal-backdrop" data-close-news aria-hidden="true"></div>
+ <div class="emodal-panel" role="dialog" aria-modal="true" aria-labelledby="newsModalTitle" tabindex="-1">
+  <button type="button" class="emodal-close" data-close-news aria-label="Close news dialog">&times;</button>
+  <p class="emodal-kicker osw" id="newsModalKicker"></p>
+  <h2 id="newsModalTitle" class="bebas emodal-title"></h2>
+  <p class="emodal-lead" id="newsModalBody"></p>
+  <a id="newsModalLink" class="btn btn-r news-modal-link" href="#" hidden></a>
+ </div>
+</div>
+
+<script src="js/main.js?v=real-schedules" defer></script>
+</body>
+</html>
